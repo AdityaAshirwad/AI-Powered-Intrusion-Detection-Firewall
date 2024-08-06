@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packet Capture Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    
+        <p><h1 style="color:rgb(7, 241, 241);">Packet Capture Dashboard</h1></p>
+        <table id="packet-table">
+            <thead style="column-gap: 5px;color:rgb(14, 13, 13);background-color: bisque;">
+                <tr>
+                    <th>Length</th>
+                    <th>Source IP</th>
+                    <th>Destination IP</th>
+                    <th>Protocol</th>
+                    <th>Source Port</th>
+                    <th>Destination Port</th>
+                    <th>Flags</th>
+                    <th>Classification</th>
+                </tr>
+            </thead>
+            <tbody id="packet-table-body">
+                <!-- Rows will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
